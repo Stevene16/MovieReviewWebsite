@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow</title>
+    <link rel="stylesheet" href="Movies.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for movies..." onkeyup="showDropdown()">
+            <button id="search-icon" onclick="performSearch()">
+                🔍
+            </button>
+            <div id="search-dropdown" class="dropdown-content"></div>
+        </div>
+        <div class="logo">
+            <h1>Movie
+                Review
+            </h1>
+        </div>
+        <nav class="nav">
+            <ul class="categories">
+                <li><a  class="A"      onclick="window.location.href='MostRated.html'" href="#">Most Rated</a></li>
+                <li><a  class="B"      onclick="window.location.href='Recent.html'"  href="#">Recent</a></li>
+                <li><a  class="C"      onclick="window.location.href='Popular.html'" href="#">Popular</a></li>
+                <li><a  class="D"      onclick="window.location.href='Pinoy.html'" href="#">Pinoy</a></li>
+                <li><a  class="E"      onclick="window.location.href='Trending.html'"  href="#">Trending</a></li>
+                <li><a onclick="window.location.href='Recommend.html'" href="#">Recommended</a></li>
+                <li><a  class="A"      onclick="window.location.href='MovieReview.html'" href="#">Home</a></li>
+            </ul>
+            </ul>
+        </nav>
+        
+    </header>
+
+    
+
+    
+        <div class="container">
+            <div class="movie-info">
+                <div class="movie-poster">
+                    <img src="Electric State.jpg" alt="Movie Poster">
+                </div>
+                <div class="movie-details">
+                    <h1>The Electric State</h1>
+                    <p class="tags">Movie | PG-13 | 2025 | 128 minutes</p>
+                    <div class="review-box"></div>
+                    <div class="review-text">
+                        <strong>By Jennifer Green</strong><br>
+                        Violence, peril, language in book-based sci-fi tale.
+                    </div>
+                    <div class="age-rating">
+                        <span>✔ age 13+</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="watch-next">
+                What to Watch Next
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="active">Reviews</div>
+    
+        </div>
+
+        <div class="review-summary">
+            <span>age 12+</span>
+            <span class="stars">★★★★☆</span>
+            <span>Based on 4 parent reviews</span>
+        </div>
+
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="profile">SR</div>
+            <div class="review-content">
+                <strong>Steven Ravena</strong>
+                <span class="age">age 11+</span>
+                <span class="stars">★★★★☆</span>
+                <strong>Omsim</strong>
+                <p class="review-text">Good for older kids, some intense scenes but overall great!</p>
+            </div>
+            <div class="age">3 days ago</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="profile">FN</div>
+            <div class="review-content">
+                <strong>Francis Niqqa</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Meow</strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+        <div class="review-card">
+            <div class="profile">JP</div>
+            <div class="review-content">
+                <strong>John Andrie Picut</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Damn son</strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+        <div class="review-card">
+            <div class="profile">SP</div>
+            <div class="review-content">
+                <strong>Stevene Pajalla</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Sheesh</strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+        <div class="review-card">
+            <div class="profile">NA</div>
+            <div class="review-content">
+                <strong>Nhick Antid</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Sheeshable</strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+        <div class="review-card">
+            <div class="profile">CC</div>
+            <div class="review-content">
+                <strong>Ceian Collong</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Wth is this movie </strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+        <div class="review-card">
+            <div class="profile">MA</div>
+            <div class="review-content">
+                <strong>Mishael Abesamis</strong>
+                
+                <span class="age">age 12+</span>
+                <span class="stars">★★★★★</span>
+                <strong>Absolute Cinema</strong>
+                <p class="review-text">Great Movie!</p>
+            </div>
+            <div class="age">5 days ago</div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button onclick="window.location.href='Comment2.html'" class="rate-btn">⭐ Rate Movie</button>
+            <span class="see-reviews">See all 4 parent reviews</span>
+        </div>
+
+    </div>
+
+
+
+</html>
