@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinoy</title>
+    <link rel="stylesheet" href="MovieReview.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for movies..." onkeyup="showDropdown()">
+            <button id="search-icon" onclick="performSearch()">
+                🔍
+            </button>
+            <div id="search-dropdown" class="dropdown-content"></div>
+        </div>
+        <div class="logo">
+            <h1>Movie
+                Review
+            </h1>
+        </div>
+        <nav class="nav">
+            <ul class="categories">
+                <li><a  class="A"      onclick="window.location.href='MostRated2.html'" href="#">Most Rated</a></li>
+                <li><a  class="B"      onclick="window.location.href='Recent2.html'"  href="#">Recent</a></li>
+                <li><a  class="C"      onclick="window.location.href='Popular2.html'" href="#">Popular</a></li>
+                <li><a  class="D"      onclick="window.location.href='Pinoy2.html'" href="#">Pinoy</a></li>
+                <li><a  class="E"      onclick="window.location.href='Trending2.html'"  href="#">Trending</a></li>
+                <li><a onclick="window.location.href='Recommended2.html'" href="#">Recommended</a></li>
+                <li><a  class="A"      onclick="window.location.href='MovieReview2.html'" href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="content">
+        <h3>Pinoy</h3>
+        <div class="reviews">
+            <div class="review">
+                <img onclick="window.location.href='Outside.html'"src="Outside.jpg"
+                alt="Movie">
+        
+                <p>Outside </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+                <p>Recommended Age: 17+</p>
+                
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Mang Kepweng Returns.html'"src="Kepweng.jpg" alt="Movie">
+                <p>Mang Kepweng Returns </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+                <p>Recommended Age: 17+</p>
+                
+                </p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='The Healing.html'" src="Healing.jpg" alt="Movie">
+                <p>The Healing </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 17+</p>
+        
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Sunod.html'"src="Sunod.jpg" alt="Movie">
+                <p>Sunod </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 17+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Labs Kita... Okey Ka Lang.html'"src="LabsKita.jpg" alt="Movie">
+                <p>Labs Kita... Okey Ka Lang? </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Seven-Sundays.html'"src="Sundays.jpg" alt="Movie">
+                <p> Seven Sundays </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Block Z.html'"src="BlockZ.jpg" alt="Movie">
+                <p>Block Z </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 15+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Shes Dating the Gangster.html'"src="Gangster.jpg" alt="Movie">
+                <p>She's Dating the Gangster  </p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p> Recommended Age: 17+ </p>
+            
+                </div>
+
+            
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-description"></p>
+                </div>
+            </div>
+
+    
+</body>
+</html>
