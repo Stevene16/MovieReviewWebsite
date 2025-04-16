@@ -1,0 +1,270 @@
+/* Base Styles (Unchanged from what you shared) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();
+    overflow-y: scroll;
+    height: 200vh;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #20201e;
+    color: rgba(205, 141, 141, 0.32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: nowrap; /* ✅ Keep in one row */
+    gap: 10px;
+    flex-shrink: 0;
+    overflow-x: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap; /* ✅ Prevent wrapping nav links */
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1; /* ✅ Expand to take space */
+    overflow-x: auto;
+}
+
+nav a {
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    color: rgb(199, 195, 214);
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* ✅ Keep in one line */
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2028b5;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    flex-shrink: 0; /* ✅ Prevent from shrinking */
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* ✅ Slightly smaller */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 35px;
+}
+
+#search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content div:hover {
+    background: #f1f1f1;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-shrink: 0; /* ✅ Prevent from shrinking */
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: white;
+    color: #007a33;
+}
+
+.join-us {
+    background-color: #005a26;
+    color: white;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.A:hover, .B:hover, .C:hover, .D:hover, .E:hover {
+    transform: scale(1.05);
+}
+
+.category {
+    background-color: #9d0808;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content {
+    text-align: center;
+    padding: 30px;
+    background-image: url(https://i.pinimg.com/736x/88/b4/b5/88b4b53c863aa5f2e9e9ce8dece1c7e9.jpg);
+    color: white;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.review:hover {
+    transform: scale(1.05);
+}
+
+.review img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* -------------------- RESPONSIVE STYLES -------------------- */
+
+/* Large screens (e.g., Acer laptop) */
+@media (max-width: 1200px) {
+    .search-container {
+        margin-right: 10px;
+    }
+    nav a {
+        font-size: 0.95rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .auth-buttons {
+        margin-top: 10px;
+    }
+    .search-container {
+        margin: 10px 0;
+        width: 100%;
+    }
+    #search-bar {
+        width: 100%;
+    }
+    .categories {
+        justify-content: center;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .auth-buttons button {
+        width: 100%;
+    }
+    .category {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+    #search-bar {
+        font-size: 14px;
+        padding: 8px;
+    }
+    nav a {
+        font-size: 0.85rem;
+        text-align: center;
+        width: 100%;
+    }
+    .content {
+        padding: 20px;
+    }
+    .review img {
+        border-radius: 3px;
+    }
+    .category {
+        width: 100%;
+        text-align: center;
+    }
+}
