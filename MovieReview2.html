@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow</title>
+    <link rel="stylesheet" href="MovieReview.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for movies..." onkeyup="showDropdown()">
+            <button id="search-icon" onclick="performSearch()">
+                🔍
+            </button>
+            <div id="search-dropdown" class="dropdown-content"></div>
+        </div>
+        <div class="logo">
+            <h1>Movie
+                Review
+            </h1>
+        </div>
+        <nav class="nav">
+            <ul class="categories">
+                <li><a  class="A"      onclick="window.location.href='MostRated2.html'" href="#">Most Rated</a></li>
+                <li><a  class="B"      onclick="window.location.href='Recent2.html'"  href="#">Recent</a></li>
+                <li><a  class="C"      onclick="window.location.href='Popular2.html'" href="#">Popular</a></li>
+                <li><a  class="D"      onclick="window.location.href='Pinoy2.html'" href="#">Pinoy</a></li>
+                <li><a  class="E"      onclick="window.location.href='Trending2.html'"  href="#">Trending</a></li>
+                <li><a onclick="window.location.href='Recommended2.html'" href="#">Recommended</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="content">
+        <h3>Trending Reviews</h3>
+        <div class="reviews">
+            <div class="review">
+                <img onclick="window.location.href='ElectricState.html'"src="Electric State.jpg
+                " alt="Movie">
+        
+                <p>The Electric State</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+                <p>Recommended Age: 13+ or 17+</p>
+                
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Invincible.html'"src="Invinciblle.jpg" alt="Movie">
+                <p>Invincible</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+                <p>Recommended Age: 17+</p>
+                
+                </p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Novocaine.html'" src="Novocaine.jpg" alt="Movie">
+                <p>Novocaine</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 17+</p>
+        
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Avengers(2012).html'"src="Avengers(2012).jpg" alt="Movie">
+                <p>Avengers</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Ultron.html'"src="Ultron.jpg" alt="Movie">
+                <p>Avengers:Age of Ultron</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='InfinityWar.html'"src="InfinityWar.jpg" alt="Movie">
+                <p>Avengers:Infinity War</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='Endgame.html'"src="Endgame.jpg" alt="Movie">
+                <p>Avengers: Endgame</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p>Recommended Age: 13+</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href='500days.html'"src="500days.jpg" alt="Movie">
+                <p>500 days of Summer</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+                <p Recommended Age: 13+</p>
+
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-description"></p>
+                </div>
+        </div>
+
+    </section>
+    <section class="content">
+        <h3>Trending Books</h3>
+        <div class="reviews">
+            <div class="review">
+                <img onclick="window.location.href=''"src="" alt="Movie">
+                <p>The Electric State</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+
+                
+            </div>
+            <div class="review">
+                <img onclick="window.location.href=''"src="" alt="Movie">
+                <p>Invincible</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</p>
+
+            </div>
+            <div class="review">
+                <img onclick="window.location.href=''" src="" alt="Movie">
+                <p>Novocaine</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+            <div class="review">
+                <img src="" alt="Movie">
+                <p>Avengers</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+            <div class="review">
+                <img src="" alt="Movie">
+                <p>Avengers:Age of Ultron</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+            <div class="review">
+                <img src="" alt="Movie">
+                <p>Avengers:Infinity War</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+            <div class="review">
+                <img src="" alt="Movie">
+                <p>Avengers: Endgame</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+            <div class="review">
+                <img src="" alt="Movie">
+                <p>500 days of Summer</p>
+                <p style="color: gold;">Rating: &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</p>
+
+            </div>
+    </section>
+
+    
+</body>
+</html>
